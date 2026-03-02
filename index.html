@@ -19,14 +19,37 @@
     .poema{font-style:italic;color:#4a3b3a}
     footer{margin-top:20px;color:var(--muted);font-size:0.9rem}
     .btn{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    .floating-hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+    .heart{position:absolute;font-size:2rem;animation:float 6s linear infinite}
+    @keyframes float{0%{left:-50px;opacity:1}100%{left:100vw;opacity:0}}
+    .heart:nth-child(1){top:10%;animation-delay:0s}
+    .heart:nth-child(2){top:20%;animation-delay:1s}
+    .heart:nth-child(3){top:30%;animation-delay:2s}
+    .heart:nth-child(4){top:40%;animation-delay:3s}
+    .heart:nth-child(5){top:50%;animation-delay:4s}
+    .heart:nth-child(6){top:60%;animation-delay:5s}
+    .heart:nth-child(7){top:70%;animation-delay:1.5s}
+    .heart:nth-child(8){top:80%;animation-delay:2.5s}
+    .nonna-img{max-width:300px;width:100%;border-radius:12px;margin:20px 0;box-shadow:0 6px 20px rgba(0,0,0,.1)}
     @media (max-width:520px){body{padding:18px}}
   </style>
 </head>
 <body>
+  <div class="floating-hearts">
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+  </div>
   <div class="container">
     <div class="hero">
       <div class="hearts">❤️ ❤️ ❤️</div>
       <h1>Ti voglio bene, Nonna Aicha</h1>
+      <img src="nonna.png" alt="La mia Nonna - Super Nonna" class="nonna-img">
       <div class="hearts">❤️ ❤️ ❤️</div>
       <div class="muted">Una raccolta di dediche e ricordi, scritte con amore.</div>
     </div>
